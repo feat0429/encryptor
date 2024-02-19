@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header id="logo-container" class="center-elements">
+        <a href="/" >
+            <img id="logo" src="./assets/images/logo.svg" alt="Logo de alura">
+        </a>
+    </header>
+    <main>  
+        <section id="input-section">
+            <textarea name="text-area" id="text-area" rows="7" cols="75" placeholder="Ingrese el texto aquí"></textarea>
+    
+            <footer id="input-section-footer">
+                <span id="input-instructions">
+                    <img src="./assets/images/attention-icon.svg" alt="">
+                    Solo letras minúsculas y sin acentos
+                </span>
+                <div class="buttons-container">
+                    <button id="encrypt-button" class="button primary-button">
+                        Encriptar
+                    </button>
+                    <button id="unencrypt-button" class="button secondary-button">
+                        Desencriptar
+                    </button>
+                </div>
+            </footer> 
+        </section>
+        <section id="result-section" class="center-elements">
+            <div id="result-text-container">
+                <p id="result-text"></p>
+                <button id="copy-button" class="button secondary-button">
+                    Copiar
+                </button>
+            </div>
+            
+            <div id="no-results-container" class="visible">
+                <img src="./assets/images/placeholder-figure.svg" alt="Dibujo de una persona sorprendida arrodillada mirando un diamante con una lupa">
+                <div id="empty-content-message-container">
+                    <h3 id="empty-content-message">Ningún mensaje fue encontrado</h3>
+                    <p id="empty-content-instruction">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="page-footer">
+        <a href="https://github.com/feat0429" target="_blank">
+            <img src="./assets/images/github-logo.svg" alt="">
+        </a>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
